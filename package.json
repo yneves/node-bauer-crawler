@@ -1,0 +1,36 @@
+{
+  "name": "bauer-crawler",
+  "version": "0.1.0",
+  "description": "Multi-thread crawler engine.",
+  "keywords": [
+    "multi-thread",
+    "multi-core",
+    "process",
+    "fork",
+    "multi-process",
+    "cluster",
+    "crawler",
+    "scraper"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/yneves/node-bauer-crawler",
+  "author": {
+    "name": "Yuri Neves Silveira",
+    "url": "http://yneves.com/",
+    "email": "npm@yneves.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yneves/node-bauer-crawler.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": ">=1.0.0"
+  },
+  "dependencies": {
+    "bauer-factory": "^1.2.8"
+  },
+  "main": "lib/index.js"
+}
