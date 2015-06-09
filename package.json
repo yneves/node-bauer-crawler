@@ -1,6 +1,6 @@
 {
   "name": "bauer-crawler",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Multi-thread crawler engine.",
   "keywords": [
     "multi-thread",
@@ -30,10 +30,10 @@
     "mocha": ">=1.0.0"
   },
   "dependencies": {
-    "bauer-cluster": "^1.1.1",
-    "bauer-cluster-queue": "^0.2.1",
-    "bauer-cluster-super": "^0.2.1",
-    "bauer-factory": "^1.2.8",
+    "bauer-cluster": "^1.2.2",
+    "bauer-cluster-queue": "^0.3.0",
+    "bauer-cluster-super": "^0.3.2",
+    "bauer-factory": "^2.0.0",
     "bluebird": "^2.9.27"
   },
   "main": "lib/index.js"
