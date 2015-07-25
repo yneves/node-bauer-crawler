@@ -2,42 +2,17 @@
 
 "use strict";
 
+var assert = require("assert");
 var Crawler = require("../../");
 
-var crawler = new Crawler({
-  
-  name: "sample",
-  
-  require: [
-    __dirname + "/../../../node-bauer-crawler-fetch",
-    __dirname + "/../../../node-bauer-crawler-scrape",
-  ],
-  
-  config: {
-    
-    fetch: {
-      workers: 2,
-      slots: 2,
-      delay: 100
-    },
-    
-    scrape: {
-      workers: 4,
-      slots: 4,
-      delay: 500
-    },
-    
-  }
-  
-});
+var crawler = new Crawler(__dirname + "/module/package.json");
 
-crawler.start(function() {
-  
-  console.log('ready');
-  this.promise()
-    .fetch("http://httpbin.org/get?a=b")
-    .then(function(file) {
-      console.log(file);
+crawler.start(function(bauer) {
+  assert.strictEqual(crawler.config.samplePlugin.slots,2);
+  assert.strictEqual(crawler.config.samplePlugin.multiply,2);
+  bauer.samplePlugin(10)
+    .then(function(value) {
+      assert.strictEqual(value,20);
     })
     .exit();
     
