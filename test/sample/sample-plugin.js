@@ -16,8 +16,7 @@ module.exports = {
   worker: function(worker,config) {
     assert.strictEqual(config.multiply,2);
     assert.strictEqual(config.slots,2);
-    // assert.strictEqual(worker._slots,2);
-    console.log("aa");
+    assert.strictEqual(worker._slots,2);
     worker.on("request",function(request,response) {
       response.sendOk({
         result: request.number * config.multiply

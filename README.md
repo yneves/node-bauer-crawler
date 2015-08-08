@@ -83,7 +83,9 @@ myCrawler.start(function(promise) {
     * `.extendPromise(name String, method Object) :void`
     * `.extendPromise(name String, method Function) :void`
     * `.start(ready Function) :void`
-
+    * `.repeat() :Boolean`
+    * `.repeat(repeat Boolean) :void`
+    
 
   * `Response`
     * `.sendOk() :void`
@@ -97,6 +99,8 @@ myCrawler.start(function(promise) {
 
   * `Promise`
     * `.requestWorker(role String, request Object) :Promise`
+    * `.repeat() :Promise`
+    * `.repeat(repeat Boolean) :Promise`
     * `.exit() :void`
 
 ## License
