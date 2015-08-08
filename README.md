@@ -1,6 +1,6 @@
 # bauer-crawler
 
-Multi-process task runner and automation tool.
+Multi-process task runner.
 
 ## Installation
 
@@ -53,6 +53,51 @@ myCrawler.start(function(promise) {
     });
 });
 ```
+
+## API Summary
+
+  * `Crawler`
+    * `new Crawler(options Object) :Crawler`
+    * `.require(module String) :Object`
+    * `.setupConfig(config Object) :void`
+    * `.setupConfig(file String) :void`
+    * `.setupCluster() :void`
+    * `.setupCluster(cluster Cluster) :void`
+    * `.setupCrawler(options Object) :void`
+    * `.loadPlugin(plugins Array) :void`
+    * `.loadPlugin(plugin String) :void`
+    * `.loadPlugin(plugin Object) :void`
+    * `.wrapCallback(module String) :Function`
+    * `.wrapCallback(callback Function) :Function`
+    * `.getWorkerRoleMap() :Object`
+    * `.createWorkers() :void`
+    * `.requestWorker(role String, request Object) :Promise`
+    * `.createPromise() :void`
+    * `.promise(resolver Function) :Promise`
+    * `.promise() :Promise`
+    * `.wrapPromise(module String) :void`
+    * `.wrapPromise(callback Function) :void`
+    * `.wrapPromise(promise Promise) :void`
+    * `.extendPromise(module String) :void`
+    * `.extendPromise(methods Object) :void`
+    * `.extendPromise(name String, method Object) :void`
+    * `.extendPromise(name String, method Function) :void`
+    * `.start(ready Function) :void`
+
+
+  * `Response`
+    * `.sendOk() :void`
+    * `.sendOk(data Object) :void`
+    * `.sendError(error Error) :void`
+
+
+  * `Worker`
+    * `.sendReady() :void`
+
+
+  * `Promise`
+    * `.requestWorker(role String, request Object) :Promise`
+    * `.exit() :void`
 
 ## License
 
