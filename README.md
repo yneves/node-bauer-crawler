@@ -73,6 +73,7 @@ myCrawler.start(function(promise) {
     * `.createWorkers() :void`
     * `.requestWorker(role String, request Object) :Promise`
     * `.createPromise() :void`
+    * `.promise(promises Array) :Promise`
     * `.promise(resolver Function) :Promise`
     * `.promise() :Promise`
     * `.wrapPromise(module String) :void`
