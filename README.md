@@ -17,8 +17,8 @@ var myCrawler = new Crawler({
   
   // plugins to be loaded
   plugins: [
-    "bauer-crawler-fetch",
-    "bauer-crawler-scrape"
+    "bauer-plugin-fetch",
+    "bauer-plugin-scrape"
   ],
   
   // configurations for each plugin
@@ -78,7 +78,7 @@ myCrawler.start(function(promise) {
     * `.promise() :Promise`
     * `.wrapPromise(module String) :void`
     * `.wrapPromise(callback Function) :void`
-    * `.wrapPromise(promise Promise) :void`
+    * `.wrapPromise(promise Promise, callback Function) :void`
     * `.extendPromise(module String) :void`
     * `.extendPromise(methods Object) :void`
     * `.extendPromise(name String, method Object) :void`
@@ -102,7 +102,7 @@ myCrawler.start(function(promise) {
     * `.requestWorker(role String, request Object) :Promise`
     * `.repeat() :Promise`
     * `.repeat(repeat Boolean) :Promise`
-    * `.exit() :void`
+    * `.exit() :Promise`
 
 ## License
 
