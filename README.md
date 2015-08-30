@@ -102,7 +102,13 @@ myCrawler.start(function(promise) {
     * `.requestWorker(role String, request Object) :Promise`
     * `.repeat() :Promise`
     * `.repeat(repeat Boolean) :Promise`
+    * `.print() :Promise`
+    * `.print(text String) :Promise`
+    * `.print(array Array) :Promise`
+    * `.print(object Object) :Promise`
+    * `.print(anything) :Promise`
     * `.exit() :Promise`
+
 
 ## License
 

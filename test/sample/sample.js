@@ -17,6 +17,7 @@ crawler.start(function(promise) {
     .then(function(value) {
       assert.strictEqual(value,20);
     })
+    .print(counter)
     .repeat(counter > 0);
 });
 
