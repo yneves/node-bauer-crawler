@@ -79,13 +79,14 @@ myCrawler.start(function(promise) {
     * `.wrapPromise(module String) :void`
     * `.wrapPromise(callback Function) :void`
     * `.wrapPromise(promise Promise, callback Function) :void`
+    * `.extendPromise(modules Array) :void`
     * `.extendPromise(module String) :void`
     * `.extendPromise(methods Object) :void`
     * `.extendPromise(name String, method Object) :void`
     * `.extendPromise(name String, method Function) :void`
     * `.start(ready Function) :void`
-    * `.repeat() :Boolean`
-    * `.repeat(repeat Boolean) :void`
+    * `.setRepeat(repeat Boolean) :void`
+    * `.getRepeat() :Boolean`
     
 
   * `Response`

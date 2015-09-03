@@ -27,7 +27,7 @@ describe("Crawler",function() {
     });
     proc.on("exit",function() {
       assert.equal(error,"");
-      assert.strictEqual(output.length,94);
+      assert.strictEqual(output.length,80);
       assert.strictEqual(output.split("\n").length,31);
       done();
     });
