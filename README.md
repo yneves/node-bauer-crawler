@@ -72,18 +72,9 @@ myCrawler.start(function(promise) {
     * `.getWorkerRoleMap() :Object`
     * `.createWorkers() :void`
     * `.requestWorker(role String, request Object) :Promise`
-    * `.createPromise() :void`
-    * `.promise(promises Array) :Promise`
-    * `.promise(resolver Function) :Promise`
-    * `.promise() :Promise`
     * `.wrapPromise(module String) :void`
     * `.wrapPromise(callback Function) :void`
     * `.wrapPromise(promise Promise, callback Function) :void`
-    * `.extendPromise(modules Array) :void`
-    * `.extendPromise(module String) :void`
-    * `.extendPromise(methods Object) :void`
-    * `.extendPromise(name String, method Object) :void`
-    * `.extendPromise(name String, method Function) :void`
     * `.start(ready Function) :void`
     * `.setRepeat(repeat Boolean) :void`
     * `.getRepeat() :Boolean`
