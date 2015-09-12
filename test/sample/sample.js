@@ -6,7 +6,7 @@ var assert = require("assert");
 var Crawler = require("../../");
 
 var crawler = new Crawler(__dirname + "/module/package.json");
-var counter = 30;
+var counter = 3;
 
 crawler.start(function(Promise) {
   assert.strictEqual(crawler.config.samplePlugin.slots,2);
@@ -18,6 +18,12 @@ crawler.start(function(Promise) {
       assert.strictEqual(value,20);
     })
     .print(counter)
+    .time(function() {
+      return Promise.delay(100);
+    })
+    .then(function(time) {
+      assert.ok(time > 100000000);
+    })
     .repeat(counter > 0);
 });
 

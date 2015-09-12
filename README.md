@@ -94,6 +94,7 @@ myCrawler.start(function(promise) {
     * `.requestWorker(role String, request Object) :Promise`
     * `.repeat() :Promise`
     * `.repeat(repeat Boolean) :Promise`
+    * `.time(callback Function) :Promise`
     * `.print() :Promise`
     * `.print(text String) :Promise`
     * `.print(array Array) :Promise`
