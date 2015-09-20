@@ -75,7 +75,7 @@ myCrawler.start(function(promise) {
     * `.wrapPromise(module String) :void`
     * `.wrapPromise(callback Function) :void`
     * `.wrapPromise(promise Promise, callback Function) :void`
-    * `.start(ready Function) :void`
+    * `.start(main Function) :void`
     * `.setRepeat(repeat Boolean) :void`
     * `.getRepeat() :Boolean`
     
