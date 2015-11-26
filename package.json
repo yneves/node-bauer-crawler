@@ -1,6 +1,6 @@
 {
   "name": "bauer-crawler",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Multi-thread crawler engine.",
   "keywords": [
     "multi-thread",
@@ -17,7 +17,7 @@
   "author": {
     "name": "Yuri Neves Silveira",
     "url": "http://yneves.com/",
-    "email": "npm@yneves.com"
+    "email": "yurinevessilveira@gmail.com"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": ">=1.0.0"
+    "mocha": "^2.3.4"
   },
   "dependencies": {
     "bauer-cluster": "^1.3.7",
