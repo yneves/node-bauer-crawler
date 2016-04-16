@@ -1,6 +1,6 @@
 {
   "name": "bauer-crawler",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "Multi-thread crawler engine.",
   "keywords": [
     "multi-thread",

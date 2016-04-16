@@ -1,27 +1,27 @@
 // - -------------------------------------------------------------------- - //
 
-"use strict";
+'use strict';
 
-var assert = require("assert");
-var Crawler = require("../../");
+var assert = require('assert');
+var Crawler = require('../../');
 
-var crawler = new Crawler(__dirname + "/module/package.json");
+var crawler = new Crawler(__dirname + '/module/package.json');
 var counter = 3;
 
-crawler.start(function(Promise) {
-  assert.strictEqual(crawler.config.samplePlugin.slots,2);
-  assert.strictEqual(crawler.config.samplePlugin.multiply,2);
+crawler.start(function (Promise) {
+  assert.strictEqual(crawler.config.samplePlugin.slots, 2);
+  assert.strictEqual(crawler.config.samplePlugin.multiply, 2);
   counter--;
   return Promise
     .samplePlugin(10)
-    .then(function(value) {
-      assert.strictEqual(value,20);
+    .then(function (value) {
+      assert.strictEqual(value, 20);
     })
     .print(counter)
-    .time(function() {
+    .time(function () {
       return Promise.delay(100);
     })
-    .then(function(time) {
+    .then(function (time) {
       assert.ok(time > 100000000);
     })
     .repeat(counter > 0);

@@ -1,10 +1,10 @@
 // - -------------------------------------------------------------------- - //
 
-"use strict";
+'use strict';
 
-var Crawler = require("../../");
+var Crawler = require('../../');
 
-var crawler = new Crawler(__dirname + "/script.js");
+var crawler = new Crawler(__dirname + '/script.js');
 crawler.start();
 
 // - -------------------------------------------------------------------- - //
